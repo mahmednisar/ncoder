@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 
 #read and write both using w+

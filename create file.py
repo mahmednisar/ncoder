@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 
 #creating a file
