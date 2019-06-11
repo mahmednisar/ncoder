@@ -1,0 +1,78 @@
+##History Display Date And Time For Each Command
+
+
+	1. Defining the environment variable named HISTTIMEFORMAT as follows:
+			
+			$ HISTTIMEFORMAT="%d/%m/%y %T "
+
+		OR add to your ~/.bash_profile file, enter:
+			
+			$ echo 'export HISTTIMEFORMAT="%d/%m/%y %T "' >> ~/.bash_profile
+
+			Where,
+
+			%d – Day
+			%m – Month
+			%y – Year
+			%T – Time
+	
+	2. Use the source command to load HISTTIMEFORMAT from file into the current shell script or a command prompt:
+		$ . ~/.bash_profile
+
+		OR
+		$ source ~/.bash_profile
+
+	3. Now, to see history, type:
+		
+		$ history
+
+
+
+#######################################       Example (without date and time)        #####################################################
+
+    1  history
+    2  uptime
+    3  echo $shell
+    4  echo $SHELL
+    5  echo $LANG
+    6  echo $HISTSIZE
+    7  echo $HISTFILE
+    8  $PS1
+    9  terminal
+   10  gnome-terminal
+   11  gnome-terminal{29}
+   12  gnome-terminal{1..29}
+   13  gnome-terminal
+   14  > gnome-terminal
+   15  > done
+   16  for((i=1; i<20; i++)); do  gnome-terminal; done
+   17  n1
+   18  alias n1='gnome-terminal'
+   19  n1
+   20  exit
+
+
+#######################################       Example (with date and time)        #####################################################
+
+    1  07/06/19 17:41:21 history
+    2  07/06/19 17:41:21 uptime
+    3  07/06/19 17:41:21 echo $shell
+    4  07/06/19 17:41:21 echo $SHELL
+    5  07/06/19 17:41:21 echo $LANG
+    6  07/06/19 17:41:21 echo $HISTSIZE
+    7  07/06/19 17:41:21 echo $HISTFILE
+    8  07/06/19 17:41:21 $PS1
+    9  07/06/19 17:41:21 terminal
+   10  07/06/19 17:41:21 gnome-terminal
+   11  07/06/19 17:41:21 gnome-terminal{29}
+   12  07/06/19 17:41:21 gnome-terminal{1..29}
+   13  07/06/19 17:41:21 gnome-terminal
+   14  07/06/19 17:41:21 > gnome-terminal
+   15  07/06/19 17:41:21 > done
+   16  07/06/19 17:41:21 for((i=1; i<20; i++)); do  gnome-terminal; done
+   17  07/06/19 17:41:21 n1
+   18  07/06/19 17:41:21 alias n1='gnome-terminal'
+   19  07/06/19 17:41:21 n1
+   20  07/06/19 17:41:21 exit
+
+

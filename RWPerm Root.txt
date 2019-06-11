@@ -1,0 +1,24 @@
+<----------------To modify the Read and Write permissions from a directory for a root user. -------------->
+
+View:
+To view the current permission's for a file or directory we use the command.
+
+ls -l <File/Directory_Name>
+eg:ls -l 1.txt
+>>-rw-r--r-- 1 ds ds 0 Jun 11 19:38 1.txt
+
+##For this case to modify the Read and Write permissions for a directory from the root user we can have Two approaches:
+1.The use of chmod command
+2.Removing permission for root all-together.
+
+Option 2 is not favourable in our case as we want to remove permission for only a directory.
+
+##The use of chmod command:
+
+chmod command is used to modify the permission's for files / directories according to users.
+
+To remove the directory permission for a root user we use chmod with - option to remove if any existent permission.
+
+eg: A directory named test is created
+then to remove all permissions for the directory we use
+chmod 000 ~/test    --->Removes permission for all user's

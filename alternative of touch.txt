@@ -1,0 +1,16 @@
+---------------------------.File does not start with touch but with command------------------
+
+--> file creates with touch command having syntax given below.
+	touch [OPTION]... FILE...
+
+--> file can be created by using another command by the use of aliases. 'touch' command can be set aliases as another command say 'create'
+    we can set aliases on the ~/.bashrc file in home directory and can use another command with in place of touch command.
+	aliases can be set by :
+		alias touch='create'
+
+
+
+--> file can be created by >filename.
+
+--> file can also be created by >>filename.
+

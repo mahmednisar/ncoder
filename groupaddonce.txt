@@ -1,0 +1,16 @@
+----------------Add multiple users in  a group at once.-------------------
+
+---->I can create a group:
+
+	sudo groupadd mygroup
+
+---->and add several users to it:
+
+	sudo usermod -a -G mygroup userA
+	sudo usermod -a -G mygroup userB
+	sudo usermod -a -G mygroup userC
+
+
+-----> we can use one line code to add member in a group by using code below:
+
+		sudo usermod -a -G mygroup userA userB userC-

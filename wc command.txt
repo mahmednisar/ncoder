@@ -1,0 +1,49 @@
+-------Find no of lines and words from a file which is not saved but in RAM:--------
+
+
+-> wc command is used for word count .
+-> It is used to find number of lines, word count, byte  and character count in the file specified in the file argument.
+
+
+
+
+
+
+Syntax:
+
+-->wc [OPTION]... [FILE]...
+	or
+-->wc [OPTION]... --files0-from=F
+
+
+Print newline, word, and byte counts for each FILE, and a total line if
+more than one FILE is specified.  A word is a non-zero-length sequence of
+characters delimited by white space.
+
+
+
+
+
+
+Let us consider a file having name f1 containing some text
+
+cat f1.txt
+
+
+hello 
+hii
+good morning
+what are you doing?
+
+
+
+passing one file in argument :
+
+
+-----> wc f1.txt
+
+ 5  8 45 f1.txt
+
+
+
+Note : When more than file name is specified in argument then command will display four-columnar output for all individual files plus one extra row displaying total number of lines, words and characters of all the files specified in argument, followed by keyword total.

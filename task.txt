@@ -1,0 +1,25 @@
+#04/06/19
+1. History with  date and time 
+2. Use case of tuple in python
+3. How to update history if entered manually in /Home/user/.bash_history  without reboot and logout.
+4. Install software using program by using any programming language.
+#05/06/2019
+
+1. File does not start with touch but with command.
+2. How to write "hello world" in a directory.
+3. Find no of lines and words from a file which is no saved but in ram.
+4. Create a file that contain number of email_id. Send a common email message to all email. verify the email as well.
+5. Store top 5url in a list and then open those url in browser.
+
+#06/06/2019
+
+1. Make CLI AWS into GUI
+
+#07/06/2019
+
+1. Code in python to connect to remote service without using putty or ssh.
+2. How to remove read and write permission from a directory for root user.
+3. Find number of members in a group.
+4. Add multiple user in a group at once.
+
+

@@ -1,0 +1,79 @@
+-->Linux
+1.Output Redirection.
+2.Check how to find if a command executed successfully or not.
+3.RAM
+4.Python input and Output
+5.Conditional statement.
+6.Commands python
+7.Subprocess python (To open os softwares in string form[])
+-->AWS
+.ami (Amazon Machine Image) used to replace .iso , Does not need to be installed and is used in AWS Cloud.
+(EC2) Elastic Compute Cloud:
+1.ECU(Elastic Conatiner Unit) Replaces RAM & CPU
+2.EBS(Elastic Block Storage) Replaces HDD
+3.AMI(Amazon Machine Image) Replaces ISO/CD/DVD
+4.AutoSet (Username & Password)
+5.RDP (Remote Desktop Protocol) Connect for Windows
+6.SSH (Secure Shell) For Linux
+Physical:
+1.RAM & CPU
+2.HDD
+3.ISO/CD/DVD
+4.Username & Password
+<><><><>
+AWS has Firewall as guard before it's servers.
+-->Access Level /etc/passwd
+0-100(Root User)
+1000-6000(Normal User)
+60001-65535(System User)
+1-999
+-----------------------------------------Cloud Computing-------------------------------------------
+
+
+AWS : Amazon web service  -----> Mumbai(Region)
+
+OS -->  1 Hardware
+        2 ISO image ---> .ami(amazon machine image) it is used to replace iso image
+
+              CLOUD                                 |                       PHYSICAL
+                                                    |
+  ECU(Elastic container unit) Replace cpu and ram   |      RAM and CPU
+  EBS(Elastic Block storage) Replace  hdd           |      HDD
+  AMI(Amazon machine image) Replace ISO/CD/DVD      |      ISO/CD/DVD
+  Autoset (username & password)                     |      username & password
+  RDP(remote desktop protocol) it is used to        |
+   access windows                                   |
+  SSH(Secure shell) used to access linux            |
+  EC2(Elastic compute cloud)
+
+
+
+Linux: 1 useradd---> To add new user
+       2 userdel---->To remove user
+       3 passwd  username---> to set password for the user
+
+ubuntu: 1 adduser
+
+------------------------------------File System Security----------------------------------------------------------
+
+User stores data in 1.Folders(Directory)
+                    2.Files
+Operations done in accessing a file:
+<Read>,<Write>,<Execute>
+file permission can be changed with chmod +/-<permission> <filename with path>
++ for enabling a permission
+- for disabling a permission
+
+To identify if a file is directory or not using permissions
+at the start of a permission there is dir in-front of the permission list
+eg: dir rw- rw- rwx
+where as a file has
+eg: rwx     rw-    r-x
+  <owner> <group> <others>
+User permissions for file and directory access is stored in Inode Table (It is metadata) in the OS.
+It contains information such as modification time,number of lines/charachters/words,user and access time along with its attributes.
+To find Inode information use (ls -l <filename>)
+eg:-rw-r--r-- 1 root root 0 Jun  7 10:37 abc.txt+
+
+SGID (set group id)
+eg: chmod g+s /<foldername>

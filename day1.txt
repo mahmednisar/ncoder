@@ -1,0 +1,31 @@
+
+----->>  Show files and folders of different folders other then desktop as default on monitor
+
+	open \nisar\adhoc.config ~ > gedit user-dirs.dirs ~ > swap Desktop with Downloads ~ > Restart
+
+
+ 
+----->> Study Concept of Recycle Bin -- how it works
+
+	done, recycle bin keeps the metadata of files,and flags it to be deleted until user permanently deletes the file from recycle bin
+
+
+
+------>> why 3 to 13 dates are missing from september 1752 calendar? 
+		
+	Six and a half million Britons went to bed on September 2, 1752, and woke up on September 14.
+	To get the calendar back in sync with astronomical events like the vernal equinox or the winter solstice, a number of days were dropped}
+
+------>> Create 500 folders and delete them in Windows .
+	 
+	import os module and write python code 
+
+	import os 
+	for i in range(1,500):
+	    os.mkdir('folder'+str(i))
+	print('500 Folders Created')
+	# 5oo folder will be created 
+	
+------->> Find the part of RAM where how much byte of data is actually stored or provided to a variable can be checked
+ 	
+		it can be checked through system monitor in linux and task manager in windows 

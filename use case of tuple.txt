@@ -1,0 +1,16 @@
+-------------------------Use case of tuple in python----------------------------
+
+
+-->The literal syntax of tuples is shown by parentheses (). However, we can also use a tuple packing to do the same, and unpacking to assign its values to a sequence.
+-->A tuple is a One - Dimensional Data Structure with indexing only possible row-wise.
+-->Tuple has immutable nature. This is a nice feature to have in some data structures where you intend to not make any changes to certain parts. For instance tuples can be used as keys in dictionaries.
+-->Tuple being immutable requires less memory space as compared to list.
+-->Using a tuple can give the programmer and the interpreter a hint that the data should not be changed.
+-->Tuples are commonly used as the equivalent of a dictionary without keys to store data. For Example,
+	[('Swordfish', 'Dominic Sena', 2001), ('Snowden', ' Oliver Stone', 2016), ('Taxi Driver', 'Martin Scorsese', 1976)]
+    Above example contains tuples inside list which has a list of movies.
+-->Reading data is simpler when tuples are stored inside a list. For example,
+	[(2,4), (5,7), (3,8), (5,9)]
+-->Tuple can also be used as key in dictionary due to their hashable and immutable nature.
+		key_val= {('super','kid'):587} 
+
