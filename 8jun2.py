@@ -5,8 +5,8 @@ import webbrowser
 from googlesearch import search
 f=open('url.txt','w')
 print("press 1 for keyboard and Press 2 for voice search")
-choice=input()
-if choice== '1':
+ch=input()
+if ch== '1':
         web=input("Please enter here : ")
         print(web)
         webbrowser.open_new_tab("https://www.google.com/search?q="+web)
@@ -18,7 +18,7 @@ if choice== '1':
                 url.append(i)
         print(url)
         f.close()
-elif choice=='2':
+elif ch=='2':
     def recognize_speech_from_mic(recognizer,microphone):
         with microphone as source:
                       audio=recognizer.listen(source)
