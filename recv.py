@@ -12,8 +12,11 @@ s=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 s.bind((recv_ip,recv_port))
 
 #recv data from sender 
+while 4>2:
+	data=s.recvfrom(256)
+	print("Message from sender" , data[0])
+	print("Sender IP + port --socket" , data[0])
+	reply=raw_input("type your reply")
+	sendto(reply,data[1])
 
-data=s.recvfrom(256)
-print(data)
-
-
+s.close()
